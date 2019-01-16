@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Appointment App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-5">
+        <h1>Schedule an Appointment!</h1>
+        <form id="appointmentForm">
+          <div>
+            <label for="name">Please enter your name:</label>
+            <input id="name" type="text">
+          </div>
+
+          <div>
+            <label for="description">Please enter the reason for your visit:</label>
+            <input id="description" type="text">
+          </div>
+
+          <div>
+            <label for="date">Please enter the date of your appointment:</label>
+            <input id="date" type="text">
+          </div>
+
+          <div>
+            <label for="start">Please enter your start time:</label>
+            <input id="start" type="text">
+          </div>
+
+          <div>
+            <label for="end">Please enter your end time:</label>
+            <input id="end" type="text">
+          </div>
+          <br>
+          <div class="button">
+          <button type="submit" class="btn btn-info" id="myBtn">Submit form</button>
+          </div>
+        </form>
+      </div>
+      <br>
+  <!-- ======================Return Message=========================== -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>
+            Booking Successful!
+            Hello <span class="name"></span>. Thank you for scheduling your appointment. Here are your details:
+            <ul>
+              <li>The reason for your appointment: <span class="description"></span></li>
+              <li>Date of your appointment: <span class="date"></span></li>
+              <li>Your start time is: <span class="start"></span></li>
+              <li>Your end time is: <span class="end"></span></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
